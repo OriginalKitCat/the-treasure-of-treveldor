@@ -16,7 +16,7 @@ shape = SubResource("RectangleShape2D_njsvn")
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(10, -19)
 
-[node name="LaternaOff" type="Sprite2D" parent="."]
+[node name="Laterna_image" type="Sprite2D" parent="."]
 position = Vector2(0, -22)
 texture = ExtResource("2_yt2a0")
 
