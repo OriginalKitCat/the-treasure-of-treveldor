@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i0ugkhwjfcdd"
-path="res://.godot/imported/kitcat.png-4939f7c8bb38a2a474909f931889315a.ctex"
+uid="uid://ddnemn050iyfm"
+path="res://.godot/imported/coin_animated.PNG-baef0efe29ee17b69ec1bb55669fd444.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kitcat.png"
-dest_files=["res://.godot/imported/kitcat.png-4939f7c8bb38a2a474909f931889315a.ctex"]
+source_file="res://images/coin_animated.PNG"
+dest_files=["res://.godot/imported/coin_animated.PNG-baef0efe29ee17b69ec1bb55669fd444.ctex"]
 
 [params]
 

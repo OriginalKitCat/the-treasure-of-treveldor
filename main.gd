@@ -11,4 +11,5 @@ func _process(delta):
 	
 func collect_coin():
 	coins_collected += 1
-	print(coins_collected )
+	print(coins_collected)
+	$CanvasLayer/Control/Label.text = str(coins_collected)
