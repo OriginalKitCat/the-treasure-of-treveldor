@@ -1,7 +1,9 @@
 extends Area2D
 
+@onready var _animation_player = $AnimationPlayer
+
 func _ready() -> void:
-	pass
+	_animation_player.play("spinning_coin")
 	
 func _process(delta: float) -> void:
 	pass
