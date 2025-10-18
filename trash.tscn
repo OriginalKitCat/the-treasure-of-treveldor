@@ -1,9 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://c41d760pvh4l0"]
+[gd_scene load_steps=3 format=3 uid="uid://c41d760pvh4l0"]
+
+[ext_resource type="Texture2D" uid="uid://cka577slkkj1h" path="res://images/trash_bucket.PNG" id="1_avkd5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m0qai"]
-size = Vector2(34, 32)
+size = Vector2(23, 32)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_m0qai")
+
+[node name="TrashBucketImage" type="Sprite2D" parent="."]
+position = Vector2(-1, 0)
+texture = ExtResource("1_avkd5")
