@@ -15,3 +15,6 @@ func collect_coin():
 func was_killed():
 	lives -= 1
 	$CanvasLayer/coin_panal/Label.text = str(lives)
+
+#func wind_towards(var wind_direction):
+	

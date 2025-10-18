@@ -1,0 +1,97 @@
+[gd_scene load_steps=19 format=3 uid="uid://b0ip2cxhix3m1"]
+
+[ext_resource type="PackedScene" uid="uid://ek7cm632k2ej" path="res://death_zone.tscn" id="1_p8tnd"]
+[ext_resource type="Texture2D" uid="uid://ckq2ef8e23wg3" path="res://images/leaf_blower.PNG" id="2_khmcl"]
+[ext_resource type="Script" uid="uid://dlad4q48pfmm" path="res://wind.gd" id="3_5723d"]
+[ext_resource type="Texture2D" uid="uid://ceik4bj13n3hx" path="res://images/blow_ainimation_frames/IMG_0112.PNG" id="3_xwga2"]
+[ext_resource type="Texture2D" uid="uid://bkoyfgnvfxd5q" path="res://images/blow_ainimation_frames/IMG_0113.PNG" id="4_5723d"]
+[ext_resource type="Texture2D" uid="uid://dktkheayvax5c" path="res://images/blow_ainimation_frames/IMG_0114.PNG" id="5_wd1nb"]
+[ext_resource type="Texture2D" uid="uid://ly027jrmrkw4" path="res://images/blow_ainimation_frames/IMG_0115.PNG" id="6_w41ih"]
+[ext_resource type="Texture2D" uid="uid://u35sn7ysy8lr" path="res://images/blow_ainimation_frames/IMG_0116.PNG" id="7_1tkei"]
+[ext_resource type="Texture2D" uid="uid://dymi1frxk0cor" path="res://images/blow_ainimation_frames/IMG_0117.PNG" id="8_vnm8n"]
+[ext_resource type="Texture2D" uid="uid://cmdmne1xuwh3q" path="res://images/blow_ainimation_frames/IMG_0118.PNG" id="9_c61qg"]
+[ext_resource type="Texture2D" uid="uid://dboi4ap1unyh6" path="res://images/blow_ainimation_frames/IMG_0119.PNG" id="10_wlbsp"]
+[ext_resource type="Texture2D" uid="uid://bpja4fdqwra8p" path="res://images/blow_ainimation_frames/IMG_0120.PNG" id="11_et865"]
+[ext_resource type="Texture2D" uid="uid://dvjfd267o7cr" path="res://images/blow_ainimation_frames/IMG_0121.PNG" id="12_2yysm"]
+[ext_resource type="Texture2D" uid="uid://dl0rnx561p6n6" path="res://images/blow_ainimation_frames/IMG_0122.PNG" id="13_ydb77"]
+[ext_resource type="Texture2D" uid="uid://dtrago0uyc5a2" path="res://images/blow_ainimation_frames/IMG_0123.PNG" id="14_nr7aw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jage"]
+size = Vector2(16.415138, 29.46236)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwga2"]
+size = Vector2(63, 35)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1m0ik"]
+animations = [{
+"frames": [{
+"duration": 0.15,
+"texture": ExtResource("3_xwga2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5723d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wd1nb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w41ih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1tkei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vnm8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c61qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wlbsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_et865")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2yysm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ydb77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nr7aw")
+}],
+"loop": true,
+"name": &"wind",
+"speed": 5.0
+}]
+
+[node name="Leaf_blower" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 4)
+scale = Vector2(0.9352876, 1.832847)
+shape = SubResource("RectangleShape2D_5jage")
+
+[node name="DeathZone" parent="." instance=ExtResource("1_p8tnd")]
+position = Vector2(-3, 3)
+scale = Vector2(0.6799703, 1.7605116)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_khmcl")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(52, 8)
+script = ExtResource("3_5723d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 5.5)
+shape = SubResource("RectangleShape2D_xwga2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_1m0ik")
+animation = &"wind"
+frame_progress = 0.11160304
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

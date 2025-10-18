@@ -50,7 +50,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Bad_Bird" type="CharacterBody2D"]
 script = ExtResource("1_l38wq")
 
 [node name="DeathZone" parent="." instance=ExtResource("2_2lsjc")]
@@ -63,6 +63,3 @@ shape = SubResource("RectangleShape2D_55g16")
 sprite_frames = SubResource("SpriteFrames_i0ue5")
 animation = &"fly"
 frame_progress = 0.4695345
-
-[node name="Timer" type="Timer" parent="."]
-metadata/range = 10
