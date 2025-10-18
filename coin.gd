@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	get_node("/root/main").collect_coin()
+	$"..".collect_coin()
 	queue_free()
 	
 	

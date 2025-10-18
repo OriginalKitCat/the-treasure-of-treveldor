@@ -14,3 +14,4 @@ func _on_body_entered(body: Node2D) -> void:
 		
 func killplayer(): 
 	player.global_position = checkpoint_manager.last_location
+	$"../..".was_killed()

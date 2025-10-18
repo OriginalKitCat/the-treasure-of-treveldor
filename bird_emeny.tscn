@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://tuv01yrwll4k"]
+
+[ext_resource type="Script" uid="uid://mclocwetxi2f" path="res://bird_emeny.gd" id="1_l38wq"]
+[ext_resource type="PackedScene" uid="uid://ek7cm632k2ej" path="res://death_zone.tscn" id="2_2lsjc"]
+[ext_resource type="Texture2D" uid="uid://8ch4dg0gtt6e" path="res://images/bird.PNG" id="3_7ebqx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_55g16"]
+size = Vector2(14, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5in4"]
+atlas = ExtResource("3_7ebqx")
+region = Rect2(0, 0, 19, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbb8x"]
+atlas = ExtResource("3_7ebqx")
+region = Rect2(19, 0, 19, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6uvl"]
+atlas = ExtResource("3_7ebqx")
+region = Rect2(38, 0, 19, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqn0i"]
+atlas = ExtResource("3_7ebqx")
+region = Rect2(57, 0, 19, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l18gq"]
+atlas = ExtResource("3_7ebqx")
+region = Rect2(76, 0, 19, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0ue5"]
+animations = [{
+"frames": [{
+"duration": 0.15,
+"texture": SubResource("AtlasTexture_o5in4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbb8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6uvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqn0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l18gq")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_l38wq")
+
+[node name="DeathZone" parent="." instance=ExtResource("2_2lsjc")]
+scale = Vector2(0.5693136, 0.348031)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_55g16")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_i0ue5")
+animation = &"fly"
+frame_progress = 0.4695345
+
+[node name="Timer" type="Timer" parent="."]
+metadata/range = 10
