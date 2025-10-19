@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3xj1ayxa4r28"]
+
+[ext_resource type="Script" uid="uid://w50ktob84ptf" path="res://extra_live.gd" id="1_0bsvn"]
+[ext_resource type="Texture2D" uid="uid://dmydxmw8mog36" path="res://images/hearth_symbol.PNG" id="1_w77q0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0t63x"]
+radius = 5.0
+
+[node name="hearth" type="Area2D"]
+script = ExtResource("1_0bsvn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.9999999)
+scale = Vector2(1.5, 1.5000001)
+texture = ExtResource("1_w77q0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_0t63x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

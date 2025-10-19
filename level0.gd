@@ -3,6 +3,7 @@ extends Node2D
 var coins_collected = 0
 var lives = 3
 
+
 func _ready():
 	$CanvasLayer/coin_panal/Label.text = str(lives)
 	
@@ -12,6 +13,10 @@ func collect_coin():
 	print(coins_collected)
 	$CanvasLayer/Control/Label.text = str(coins_collected)
 	
+func collect_live():
+	lives += 1
+	$CanvasLayer/coin_panal/Label.text = str(lives)
+
 func was_killed():
 	lives -= 1
 	$CanvasLayer/coin_panal/Label.text = str(lives)

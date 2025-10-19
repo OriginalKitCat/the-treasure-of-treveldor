@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var checkpoint_manager = get_parent().get_parent().get_node("CheckpointManager")
+@onready var checkpoint_manager = $"../CheckpointManager"
 
 func _ready():
 	connect("body_entered", Callable(self, "_on_body_entered"))

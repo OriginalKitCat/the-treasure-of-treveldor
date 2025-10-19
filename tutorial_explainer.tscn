@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5wfpi6tyho3"]
+
+[ext_resource type="FontFile" uid="uid://dk3rtw1w3qmkh" path="res://fonts/hardpixel/Hardpixel.OTF" id="1_iwwum"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jcy8n"]
+radius = 248.01814
+
+[node name="Tutorial_explainer" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jcy8n")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -34.0
+offset_top = -23.0
+offset_right = 30.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_iwwum")
+theme_override_font_sizes/font_size = 32
+text = "Test"

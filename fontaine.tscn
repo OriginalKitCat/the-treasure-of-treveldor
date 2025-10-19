@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://dvy6fplm6rmk5"]
+
+[ext_resource type="Texture2D" uid="uid://bwckg54amk15h" path="res://images/tree8.PNG" id="1_7488r"]
+[ext_resource type="Script" uid="uid://c841awgoudtlv" path="res://level_finish_fontaine.gd" id="2_uxqu0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pks2r"]
+size = Vector2(49, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qy0sp"]
+size = Vector2(59, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxqu0"]
+atlas = ExtResource("1_7488r")
+region = Rect2(0, 0, 63, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcy1w"]
+atlas = ExtResource("1_7488r")
+region = Rect2(63, 0, 63, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_daxye"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_uxqu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcy1w")
+}],
+"loop": true,
+"name": &"fontaine",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7488r"]
+size = Vector2(59, 35)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 28)
+shape = SubResource("RectangleShape2D_pks2r")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 22)
+shape = SubResource("RectangleShape2D_qy0sp")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_daxye")
+animation = &"fontaine"
+frame_progress = 0.14742462
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_uxqu0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 14.5)
+shape = SubResource("RectangleShape2D_7488r")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

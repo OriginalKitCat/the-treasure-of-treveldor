@@ -15,6 +15,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	velocity.x = direction * speed
 	countdown -= 1 
+	velocity.y = 0 
 	if countdown == 0:
 		countdown = set_countdown_to
 		direction = -direction
