@@ -10,6 +10,7 @@ var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready() -> void:
 	_animation_player.play("standing")
+	
 
 func  _physics_process(delta: float) -> void:
 	if not is_on_floor():
