@@ -1,6 +1,9 @@
 extends Area2D
 
-@onready var startscreen = 
+
+ 
 
 func _on_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
+	if body.name == "Player":
+		get_parent().finish_level()
+		print("test")

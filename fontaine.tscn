@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dvy6fplm6rmk5"]
+[gd_scene load_steps=8 format=3 uid="uid://dvy6fplm6rmk5"]
 
 [ext_resource type="Texture2D" uid="uid://bwckg54amk15h" path="res://images/tree8.PNG" id="1_7488r"]
-[ext_resource type="Script" uid="uid://c841awgoudtlv" path="res://level_finish_fontaine.gd" id="2_uxqu0"]
+[ext_resource type="Script" uid="uid://ucuky1uk1d0" path="res://fontaine.gd" id="1_fcy1w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pks2r"]
 size = Vector2(49, 8)
@@ -31,10 +31,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7488r"]
-size = Vector2(59, 35)
-
 [node name="Area2D" type="Area2D"]
+script = ExtResource("1_fcy1w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 28)
@@ -49,11 +47,4 @@ sprite_frames = SubResource("SpriteFrames_daxye")
 animation = &"fontaine"
 frame_progress = 0.14742462
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("2_uxqu0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.5, 14.5)
-shape = SubResource("RectangleShape2D_7488r")
-
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
