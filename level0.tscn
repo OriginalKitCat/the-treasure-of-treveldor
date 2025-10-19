@@ -1,10 +1,12 @@
-[gd_scene load_steps=25 format=4 uid="uid://bqtlf303cs6qf"]
+[gd_scene load_steps=27 format=4 uid="uid://bqtlf303cs6qf"]
 
 [ext_resource type="Script" uid="uid://b60kxnvo2c5c7" path="res://level0.gd" id="1_vqwgl"]
 [ext_resource type="PackedScene" uid="uid://bqpot1xpmj7ye" path="res://parallax_bakground.tscn" id="2_jie2m"]
 [ext_resource type="Script" uid="uid://b6a8lkdkersh7" path="res://parallax_bakground.gd" id="3_65h7p"]
 [ext_resource type="FontFile" uid="uid://dk3rtw1w3qmkh" path="res://fonts/hardpixel/Hardpixel.OTF" id="4_5fe57"]
+[ext_resource type="Texture2D" uid="uid://ctib66mbp2w1m" path="res://images/tree6.PNG" id="4_57t8h"]
 [ext_resource type="PackedScene" uid="uid://capma046028re" path="res://barrier_block.tscn" id="5_57t8h"]
+[ext_resource type="Texture2D" uid="uid://bkqvurruvp1pe" path="res://images/tree7.PNG" id="5_no4c2"]
 [ext_resource type="PackedScene" uid="uid://ek7cm632k2ej" path="res://death_zone.tscn" id="6_no4c2"]
 [ext_resource type="Texture2D" uid="uid://dg046i62qotkl" path="res://images/grass_tile_new.PNG" id="7_evib2"]
 [ext_resource type="PackedScene" uid="uid://d3xj1ayxa4r28" path="res://extra_Live.tscn" id="8_cg7th"]
@@ -109,6 +111,106 @@ script = ExtResource("1_vqwgl")
 [node name="Parallax2D" parent="." instance=ExtResource("2_jie2m")]
 scroll_offset = Vector2(-687, -199)
 script = ExtResource("3_65h7p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(175, 305)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(216, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(255, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(478, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(707, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(1459, 305)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(1487, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(1515, 305)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(1545, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(1640, 304)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(1937, 303)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(1959, 303)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(2121, 273)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(2202, 208)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(2483, 242)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(2507, 242)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(2529, 242)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(2621, 241)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(2644, 241)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(2668, 241)
+texture = ExtResource("4_57t8h")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(744, 289)
+texture = ExtResource("5_no4c2")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(1019, 288)
+texture = ExtResource("5_no4c2")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(1054, 288)
+texture = ExtResource("5_no4c2")
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(1615, 289)
+texture = ExtResource("5_no4c2")
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(2144, 257)
+texture = ExtResource("5_no4c2")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 39.0
@@ -282,25 +384,25 @@ position = Vector2(1510, 312)
 position = Vector2(2576, 227)
 
 [node name="extralive" parent="." instance=ExtResource("8_cg7th")]
-position = Vector2(792, 303)
+position = Vector2(1397, 304)
 
 [connection signal="body_entered" from="grass_tiles/DeathZone" to="grass_tiles/DeathZone" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80564" to="grass_tiles/@Area2D@80564" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80565" to="grass_tiles/@Area2D@80565" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80566" to="grass_tiles/@Area2D@80566" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80567" to="grass_tiles/@Area2D@80567" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80568" to="grass_tiles/@Area2D@80568" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80569" to="grass_tiles/@Area2D@80569" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80570" to="grass_tiles/@Area2D@80570" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80571" to="grass_tiles/@Area2D@80571" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80572" to="grass_tiles/@Area2D@80572" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80573" to="grass_tiles/@Area2D@80573" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80574" to="grass_tiles/@Area2D@80574" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80575" to="grass_tiles/@Area2D@80575" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80576" to="grass_tiles/@Area2D@80576" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80577" to="grass_tiles/@Area2D@80577" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80578" to="grass_tiles/@Area2D@80578" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80579" to="grass_tiles/@Area2D@80579" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80580" to="grass_tiles/@Area2D@80580" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80581" to="grass_tiles/@Area2D@80581" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@80582" to="grass_tiles/@Area2D@80582" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118276" to="grass_tiles/@Area2D@118276" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118277" to="grass_tiles/@Area2D@118277" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118278" to="grass_tiles/@Area2D@118278" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118279" to="grass_tiles/@Area2D@118279" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118280" to="grass_tiles/@Area2D@118280" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118281" to="grass_tiles/@Area2D@118281" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118282" to="grass_tiles/@Area2D@118282" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118283" to="grass_tiles/@Area2D@118283" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118284" to="grass_tiles/@Area2D@118284" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118285" to="grass_tiles/@Area2D@118285" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118286" to="grass_tiles/@Area2D@118286" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118287" to="grass_tiles/@Area2D@118287" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118288" to="grass_tiles/@Area2D@118288" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118289" to="grass_tiles/@Area2D@118289" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118290" to="grass_tiles/@Area2D@118290" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118291" to="grass_tiles/@Area2D@118291" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118292" to="grass_tiles/@Area2D@118292" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118293" to="grass_tiles/@Area2D@118293" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@118294" to="grass_tiles/@Area2D@118294" method="_on_body_entered"]
