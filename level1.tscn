@@ -1,6 +1,9 @@
-[gd_scene load_steps=16 format=4 uid="uid://cmjwdqst0n0ys"]
+[gd_scene load_steps=19 format=4 uid="uid://cmjwdqst0n0ys"]
 
+[ext_resource type="Script" uid="uid://dhsvpgv2w4kgh" path="res://level1.gd" id="1_eqrsh"]
+[ext_resource type="PackedScene" uid="uid://d325f5i0nuqbl" path="res://coin_panal.tscn" id="1_n8vhr"]
 [ext_resource type="PackedScene" uid="uid://bqpot1xpmj7ye" path="res://parallax_bakground.tscn" id="1_ootpb"]
+[ext_resource type="PackedScene" uid="uid://b2ew5v8bebpoh" path="res://livepanel.tscn" id="2_eqrsh"]
 [ext_resource type="Script" uid="uid://b6a8lkdkersh7" path="res://parallax_bakground.gd" id="2_v38iq"]
 [ext_resource type="Texture2D" uid="uid://ctib66mbp2w1m" path="res://images/tree6.PNG" id="3_usj0q"]
 [ext_resource type="Texture2D" uid="uid://dg046i62qotkl" path="res://images/grass_tile_new.PNG" id="3_v8kj3"]
@@ -119,7 +122,22 @@ sources/0 = SubResource("TileSetAtlasSource_crycw")
 sources/1 = SubResource("TileSetScenesCollectionSource_5j5gb")
 sources/2 = SubResource("TileSetScenesCollectionSource_mx85b")
 
-[node name="Node2D" type="Node2D"]
+[node name="level1" type="Node2D"]
+script = ExtResource("1_eqrsh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="coin_panal" parent="CanvasLayer" instance=ExtResource("1_n8vhr")]
+offset_left = 56.0
+offset_top = 62.0
+offset_right = 56.0
+offset_bottom = 62.0
+
+[node name="live_panal" parent="CanvasLayer" instance=ExtResource("2_eqrsh")]
+offset_left = 197.0
+offset_top = 62.0
+offset_right = 197.0
+offset_bottom = 62.0
 
 [node name="Parallax2D" parent="." instance=ExtResource("1_ootpb")]
 scroll_offset = Vector2(-669, -215)
@@ -176,9 +194,9 @@ position = Vector2(549, 17)
 position = Vector2(11, 22)
 
 [connection signal="body_entered" from="TileMapLayer/DeathZone" to="TileMapLayer/DeathZone" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108475" to="TileMapLayer/@Area2D@108475" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108476" to="TileMapLayer/@Area2D@108476" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108477" to="TileMapLayer/@Area2D@108477" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108478" to="TileMapLayer/@Area2D@108478" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108479" to="TileMapLayer/@Area2D@108479" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@108480" to="TileMapLayer/@Area2D@108480" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41739" to="TileMapLayer/@Area2D@41739" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41740" to="TileMapLayer/@Area2D@41740" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41741" to="TileMapLayer/@Area2D@41741" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41742" to="TileMapLayer/@Area2D@41742" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41743" to="TileMapLayer/@Area2D@41743" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@41744" to="TileMapLayer/@Area2D@41744" method="_on_body_entered"]
