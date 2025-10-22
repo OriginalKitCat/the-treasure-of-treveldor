@@ -14,6 +14,7 @@ func _ready() -> void:
 func _on_play_button_button_down() -> void:
 	var current_Scene_file = get_tree().current_scene.scene_file_path
 	print(current_Scene_file)
+	Data.lives_data = 3
 	var next_scene = "res://level" + str(currentlevel) + ".tscn"
 	get_tree().change_scene_to_file(next_scene)
 	
