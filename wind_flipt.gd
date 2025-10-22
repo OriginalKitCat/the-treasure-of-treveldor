@@ -7,11 +7,9 @@ func  _ready():
 	player = $"../../player"
 	_animated_sprite.play("wind")
 
-
-
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
-		Data.wind = 60
+		Data.wind = -60
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.name == "player":
