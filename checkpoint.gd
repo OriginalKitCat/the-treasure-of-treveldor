@@ -9,7 +9,7 @@ func _ready():
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
-		checkpoint_manager.last_location = $Marker2D.global_position
+		Data.save_location = $Marker2D.global_position
 		set_lantern_on()
 
 func set_lantern_off():

@@ -10,9 +10,13 @@ var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready() -> void:
 	_animation_player.play("standing")
+	Data.save_location = global_position
 	
 
 func  _physics_process(delta: float) -> void:
+	if Data.was_killed == true:
+		global_position = Data.save_location
+		Data.was_killed = false
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
@@ -25,9 +29,7 @@ func  _physics_process(delta: float) -> void:
 		$PlayerWaiting.flip_h = (direction == -1)
 	else:
 		velocity.x =move_toward(velocity.x, 0, run_speed)
-	velocity.x += windspeed
+	velocity.x += Data.wind
 	move_and_slide()
 
-func wind_towards(wind_direction: int) -> void:
-	windspeed = wind_direction
 	

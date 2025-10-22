@@ -2,9 +2,9 @@ extends Node2D
 
 var version = "0.4.1"
 @onready var player = $player
-var currentlevel = 0
+var currentlevel = 1
 var load_this_level
-var coins = CoinsData.coins_data
+var coins = Data.coins_data
  
 func _ready() -> void:
 	$Control/version.text = version

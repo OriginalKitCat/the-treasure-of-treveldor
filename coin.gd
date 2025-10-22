@@ -5,13 +5,10 @@ extends Area2D
 func _ready() -> void:
 	_animation_player.play("spinning_coin")
 	
-func _process(delta: float) -> void:
-	pass
-	
 
 
-func _on_body_entered(body: Node2D) -> void:
-	$"..".collect_coin()
+func _on_body_entered(_body: Node2D) -> void:
+	Data.coins_data += 1
 	queue_free()
 	
 	

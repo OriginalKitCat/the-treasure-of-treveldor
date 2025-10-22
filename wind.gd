@@ -11,8 +11,8 @@ func  _ready():
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
-		player.wind_towards(30)
+		Data.wind = 30
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.name == "player":
-		player.wind_towards(0)
+		Data.wind = 0
