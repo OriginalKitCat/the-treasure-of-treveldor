@@ -5,7 +5,7 @@ var version = Data.version
 var currentlevel = 1
 var load_this_level
 var coins = Data.coins_data
- 
+
 func _ready() -> void:
 	$Control/version.text = version
 	$Control/coin_panal/Label.text = str(coins)
