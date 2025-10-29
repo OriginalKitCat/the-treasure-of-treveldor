@@ -2,7 +2,7 @@ extends Node2D
 
 var version = Data.version
 @onready var player = $player
-var currentlevel = 1
+var currentlevel = 2
 var load_this_level
 var coins = Data.coins_data
  
