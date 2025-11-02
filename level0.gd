@@ -20,5 +20,6 @@ func was_killed():
 
 
 func finish_level():
+	Data.next_level = 1
 	get_tree().change_scene_to_file("res://start screen.tscn")
 	queue_free()

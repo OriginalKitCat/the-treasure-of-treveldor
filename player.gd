@@ -11,9 +11,11 @@ var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _ready() -> void:
 	_animation_player.play("standing")
 	Data.save_location = global_position
+	Data.current_payer_pos = global_position
 	
 
 func  _physics_process(delta: float) -> void:
+	Data.current_payer_pos = global_position
 	if Data.was_killed == true:
 		global_position = Data.save_location
 		Data.was_killed = false

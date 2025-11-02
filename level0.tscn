@@ -289,15 +289,15 @@ And some call them respawn points"
 horizontal_alignment = 1
 
 [node name="Label7" type="Label" parent="."]
-offset_left = 1909.0
-offset_top = 128.0
-offset_right = 2280.0
-offset_bottom = 206.0
+offset_left = 1679.0
+offset_top = 202.0
+offset_right = 2050.0
+offset_bottom = 280.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_5fe57")
 theme_override_font_sizes/font_size = 20
-text = "Jump on 
-the bench"
+text = "Don't you
+like extra lives?"
 horizontal_alignment = 1
 
 [node name="Label8" type="Label" parent="."]
@@ -384,25 +384,25 @@ position = Vector2(1510, 312)
 position = Vector2(2576, 227)
 
 [node name="extralive" parent="." instance=ExtResource("8_cg7th")]
-position = Vector2(1397, 304)
+position = Vector2(1869, 319)
 
 [connection signal="body_entered" from="grass_tiles/DeathZone" to="grass_tiles/DeathZone" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40070" to="grass_tiles/@Area2D@40070" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40071" to="grass_tiles/@Area2D@40071" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40072" to="grass_tiles/@Area2D@40072" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40073" to="grass_tiles/@Area2D@40073" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40074" to="grass_tiles/@Area2D@40074" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40075" to="grass_tiles/@Area2D@40075" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40076" to="grass_tiles/@Area2D@40076" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40077" to="grass_tiles/@Area2D@40077" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40078" to="grass_tiles/@Area2D@40078" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40079" to="grass_tiles/@Area2D@40079" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40080" to="grass_tiles/@Area2D@40080" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40081" to="grass_tiles/@Area2D@40081" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40082" to="grass_tiles/@Area2D@40082" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40083" to="grass_tiles/@Area2D@40083" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40084" to="grass_tiles/@Area2D@40084" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40085" to="grass_tiles/@Area2D@40085" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40086" to="grass_tiles/@Area2D@40086" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40087" to="grass_tiles/@Area2D@40087" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@40088" to="grass_tiles/@Area2D@40088" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33398" to="grass_tiles/@Area2D@33398" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33399" to="grass_tiles/@Area2D@33399" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33400" to="grass_tiles/@Area2D@33400" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33401" to="grass_tiles/@Area2D@33401" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33402" to="grass_tiles/@Area2D@33402" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33403" to="grass_tiles/@Area2D@33403" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33404" to="grass_tiles/@Area2D@33404" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33405" to="grass_tiles/@Area2D@33405" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33406" to="grass_tiles/@Area2D@33406" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33407" to="grass_tiles/@Area2D@33407" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33408" to="grass_tiles/@Area2D@33408" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33409" to="grass_tiles/@Area2D@33409" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33410" to="grass_tiles/@Area2D@33410" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33411" to="grass_tiles/@Area2D@33411" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33412" to="grass_tiles/@Area2D@33412" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33413" to="grass_tiles/@Area2D@33413" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33414" to="grass_tiles/@Area2D@33414" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33415" to="grass_tiles/@Area2D@33415" method="_on_body_entered"]
+[connection signal="body_entered" from="grass_tiles/@Area2D@33416" to="grass_tiles/@Area2D@33416" method="_on_body_entered"]

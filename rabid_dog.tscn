@@ -1,0 +1,156 @@
+[gd_scene load_steps=30 format=3 uid="uid://ddrhioid45kea"]
+
+[ext_resource type="Texture2D" uid="uid://djgqeasebwakp" path="res://images/rabid_dog/rabid_dog.png" id="1_51xml"]
+[ext_resource type="Script" uid="uid://du2jkvhj22xf7" path="res://rabid_dog.gd" id="1_evc2a"]
+[ext_resource type="Texture2D" uid="uid://dg0c8faudclns" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412.png" id="1_re0uw"]
+[ext_resource type="Texture2D" uid="uid://bolrpx4fmjhw1" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_002.png" id="2_bl0qp"]
+[ext_resource type="Texture2D" uid="uid://di3ayf87d01gl" path="res://images/rabid_dog/rabid_dog_002.png" id="2_psiej"]
+[ext_resource type="Texture2D" uid="uid://ckkornyl7ignw" path="res://images/rabid_dog/rabid_dog_003.png" id="3_46gsi"]
+[ext_resource type="Texture2D" uid="uid://8hj7k72e31hd" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_003.png" id="3_evc2a"]
+[ext_resource type="Texture2D" uid="uid://mfwu42q6q0hw" path="res://images/rabid_dog/rabid_dog_004.png" id="4_bh0qw"]
+[ext_resource type="Texture2D" uid="uid://hqg0liwqv32g" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_004.png" id="4_hjnrc"]
+[ext_resource type="Texture2D" uid="uid://dte45cou2muct" path="res://images/rabid_dog/rabid_dog_005.png" id="5_8ugt6"]
+[ext_resource type="Texture2D" uid="uid://bppf22ae5qqle" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_005.png" id="5_m7ipc"]
+[ext_resource type="Texture2D" uid="uid://h7qe3tnir7gn" path="res://images/rabid_dog/rabid_dog_006.png" id="6_52wir"]
+[ext_resource type="Texture2D" uid="uid://bce7xjx31e81t" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_006.png" id="6_ht37c"]
+[ext_resource type="Texture2D" uid="uid://di2jmfpblo507" path="res://images/rabid_dog/rabid_dog_007.png" id="7_7ow11"]
+[ext_resource type="Texture2D" uid="uid://dnww8vqlysshh" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_007.png" id="7_cgcue"]
+[ext_resource type="Texture2D" uid="uid://26d04uo0ujlp" path="res://images/rabid_dog/rabid_dog_008.png" id="8_422ft"]
+[ext_resource type="Texture2D" uid="uid://0t2vpxhkd7a" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_008.png" id="8_ucoxn"]
+[ext_resource type="Texture2D" uid="uid://bgicxvw8uigvy" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_009.png" id="9_4edxh"]
+[ext_resource type="Texture2D" uid="uid://cj0gx4mbqu0qc" path="res://images/rabid_dog/rabid_dog_009.png" id="9_nftad"]
+[ext_resource type="Texture2D" uid="uid://cfyps1clsnwlu" path="res://images/rabid_dog/rabid_dog_010.png" id="10_ijg4d"]
+[ext_resource type="Texture2D" uid="uid://dev05bhp4kjwh" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_010.png" id="10_ylt56"]
+[ext_resource type="Texture2D" uid="uid://8ywgn5wvn4s7" path="res://images/rabid_dog/waiting/signal-2025-11-02-135412_011.png" id="11_65bou"]
+[ext_resource type="Texture2D" uid="uid://b16r2tjvchnr" path="res://images/rabid_dog/rabid_dog_011.png" id="11_woh0o"]
+[ext_resource type="Texture2D" uid="uid://bp8kqrnu715th" path="res://images/rabid_dog/rabid_dog_012.png" id="12_re0uw"]
+[ext_resource type="PackedScene" uid="uid://ek7cm632k2ej" path="res://death_zone.tscn" id="24_bl0qp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_evc2a"]
+size = Vector2(27, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjnrc"]
+size = Vector2(10, 10)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bl0qp"]
+radius = 294.0068
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bl0qp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_re0uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bl0qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_evc2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hjnrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m7ipc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ht37c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cgcue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ucoxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4edxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ylt56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_65bou")
+}],
+"loop": true,
+"name": &"waiting",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("1_51xml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_psiej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_46gsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bh0qw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8ugt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_52wir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7ow11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_422ft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nftad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ijg4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_woh0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_re0uw")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 12.0
+}]
+
+[node name="rabid_dog" type="CharacterBody2D"]
+script = ExtResource("1_evc2a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 3.5)
+shape = SubResource("RectangleShape2D_evc2a")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-13, -6)
+shape = SubResource("RectangleShape2D_hjnrc")
+
+[node name="DeathZone" parent="." instance=ExtResource("24_bl0qp")]
+position = Vector2(2, 4)
+scale = Vector2(0.9200009, 0.7892387)
+
+[node name="DeathZone2" parent="." instance=ExtResource("24_bl0qp")]
+position = Vector2(-13, -5.999999)
+scale = Vector2(0.37562102, -0.40622613)
+
+[node name="DeathZone3" parent="." instance=ExtResource("24_bl0qp")]
+position = Vector2(16, -6.000001)
+scale = Vector2(0.15999693, 0.5200006)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_bl0qp")
+debug_color = Color(0.7767174, 0.35884026, 0.66141135, 0.41960785)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bl0qp")
+animation = &"walking"
+frame = 5
+frame_progress = 0.6397107
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
