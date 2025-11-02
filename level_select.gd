@@ -15,20 +15,16 @@ func _on_play_button_button_down() -> void:
 	#var current_Scene_file = get_tree().current_scene.scene_file_path
 	#print(current_Scene_file)
 	Data.lives_data = 3
-	var next_scene = "res://level" + str(currentlevel) + ".tscn"
+	var next_scene = "res://level0.tscn"
 	get_tree().change_scene_to_file(next_scene)
-	
-
-	
-func levelup():
-	load_this_level += 1
-
-func _on_level_finished(updated_coins):
-	coins = updated_coins
-	print("Coins: ", coins)
-	self.show()
-
 
 func _on_select_level_button_button_down() -> void:
 	Data.lives_data = 3
-	get_tree().change_scene_to_file("res://level_select.tscn")
+	var next_scene = "res://level1.tscn"
+	get_tree().change_scene_to_file(next_scene)
+
+
+func _on_change_caracter_button_down() -> void:
+	Data.lives_data = 3
+	var next_scene = "res://level2.tscn"
+	get_tree().change_scene_to_file(next_scene)

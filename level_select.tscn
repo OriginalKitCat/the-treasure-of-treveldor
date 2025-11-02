@@ -10,7 +10,7 @@
 
 [sub_resource type="FontVariation" id="FontVariation_reu5o"]
 
-[node name="start_screen" type="Node2D"]
+[node name="level_select" type="Node2D"]
 script = ExtResource("1_1iyaf")
 
 [node name="Parallax2D" parent="." instance=ExtResource("2_1wnlg")]
@@ -61,7 +61,7 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "full of bugs :("
 
-[node name="Play_button" type="Button" parent="Control"]
+[node name="tutorial" type="Button" parent="Control"]
 layout_mode = 0
 offset_left = 400.0
 offset_top = 278.0
@@ -69,9 +69,9 @@ offset_right = 765.0
 offset_bottom = 338.0
 theme_override_fonts/font = ExtResource("6_rtb5x")
 theme_override_font_sizes/font_size = 20
-text = "Level 1"
+text = "Tutorial"
 
-[node name="select_level_button" type="Button" parent="Control"]
+[node name="level1" type="Button" parent="Control"]
 layout_mode = 0
 offset_left = 399.0
 offset_top = 355.0
@@ -79,9 +79,9 @@ offset_right = 765.0
 offset_bottom = 415.0
 theme_override_fonts/font = ExtResource("6_rtb5x")
 theme_override_font_sizes/font_size = 20
-text = "Level 2"
+text = "Level 1"
 
-[node name="change_caracter" type="Button" parent="Control"]
+[node name="level3" type="Button" parent="Control"]
 layout_mode = 0
 offset_left = 400.0
 offset_top = 432.0
@@ -89,7 +89,7 @@ offset_right = 765.0
 offset_bottom = 492.0
 theme_override_fonts/font = ExtResource("6_rtb5x")
 theme_override_font_sizes/font_size = 20
-text = "Level 3"
+text = "Level 2"
 
 [node name="coin_panal" parent="Control" instance=ExtResource("7_vnx2f")]
 layout_mode = 1
@@ -98,5 +98,6 @@ offset_top = 559.0
 offset_right = 44.0
 offset_bottom = 519.0
 
-[connection signal="button_down" from="Control/Play_button" to="." method="_on_play_button_button_down"]
-[connection signal="button_down" from="Control/select_level_button" to="." method="_on_select_level_button_button_down"]
+[connection signal="button_down" from="Control/tutorial" to="." method="_on_play_button_button_down"]
+[connection signal="button_down" from="Control/level1" to="." method="_on_select_level_button_button_down"]
+[connection signal="button_down" from="Control/level3" to="." method="_on_change_caracter_button_down"]
