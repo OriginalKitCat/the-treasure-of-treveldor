@@ -11,9 +11,14 @@ func _ready() -> void:
 func  _physics_process(_delta: float) -> void:
 	if followplayer:
 		if Data.current_payer_pos.x < global_position.x:
-			velocity.x -= weed_speed
+			velocity.x = -weed_speed
+			print("Player is left")
 		if Data.current_payer_posx > global_position.x:
 			velocity.x += weed_speed
+			print("Player is right")
+	print("debug_test:")
+	print("Dog_pos:" + str(global_position.x))
+	print("Player_pos:" + str(Data.current_payer_pos))
 	move_and_slide()
 
 

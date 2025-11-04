@@ -1,7 +1,7 @@
 extends Node
 
 var player
-var current_payer_pos
+var current_payer_pos = null
 var save_location = null
 var was_killed
 var coins_data = 0
