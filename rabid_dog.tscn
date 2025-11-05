@@ -76,7 +76,7 @@ animations = [{
 "speed": 8.0
 }, {
 "frames": [{
-"duration": 0.2,
+"duration": 0.1,
 "texture": ExtResource("1_51xml")
 }, {
 "duration": 1.0,
@@ -148,7 +148,7 @@ debug_color = Color(0.7767174, 0.35884026, 0.66141135, 0.41960785)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_bl0qp")
-animation = &"waiting"
+animation = &"walking"
 
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

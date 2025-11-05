@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwb3mq36gsqve"
-path="res://.godot/imported/the-treasure-of-treveldor.png-6636c0a3aba97eefefb3569abf7ea8b2.ctex"
+uid="uid://trgpfwvbhvpo"
+path="res://.godot/imported/parkrunner.apple-touch-icon.png-b692504af0cb8ed27319ba1372096511.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://web_build_1/the-treasure-of-treveldor.png"
-dest_files=["res://.godot/imported/the-treasure-of-treveldor.png-6636c0a3aba97eefefb3569abf7ea8b2.ctex"]
+source_file="res://web_build_2/parkrunner.apple-touch-icon.png"
+dest_files=["res://.godot/imported/parkrunner.apple-touch-icon.png-b692504af0cb8ed27319ba1372096511.ctex"]
 
 [params]
 

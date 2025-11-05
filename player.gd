@@ -19,6 +19,9 @@ func  _physics_process(delta: float) -> void:
 	if Data.was_killed == true:
 		global_position = Data.save_location
 		Data.was_killed = false
+	if Data.travel_with_underground == true:
+		global_position = Data.undergroundpos
+		Data.travel_with_underground = false
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
