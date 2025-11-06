@@ -1106,7 +1106,7 @@ position = Vector2(9694, -1226)
 position = Vector2(9742, -333)
 
 [node name="player" parent="." instance=ExtResource("12_lwvnx")]
-position = Vector2(3334, 24)
+position = Vector2(74, 311)
 
 [node name="rabid_dog2" parent="." instance=ExtResource("15_r8rrl")]
 position = Vector2(9082, -1166)
