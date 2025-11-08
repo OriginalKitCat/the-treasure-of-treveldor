@@ -9,7 +9,7 @@ func _physics_process(_delta: float) -> void:
 	$CanvasLayer/live_panal/Label.text = str(lives)
 	if lives < 0:
 		Data.coins_data = levelalreadycollectedcoins
-		get_tree().change_scene_to_file("res://start screen.tscn")
+		get_tree().change_scene_to_file("res://(ui)levels/start screen.tscn")
 		queue_free()
 
 func collect_live():
@@ -20,6 +20,6 @@ func was_killed():
 
 
 func finish_level():
-	Data.next_level = 0 # I din't created level 3 at the moment, so it returns to the tutorial
-	get_tree().change_scene_to_file("res://start screen.tscn")
+	Data.next_level = 1
+	get_tree().change_scene_to_file("res://(ui)levels/start screen.tscn")
 	queue_free()

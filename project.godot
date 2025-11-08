@@ -17,11 +17,30 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Data="*res://coins_data.gd"
+Data="*res://global/data.gd"
+SceneTransitonController="*res://transition/scene_transiton_controller.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://(ui)levels/": "green",
+"res://addons/": "gray",
+"res://fonts/": "gray",
+"res://global/": "red",
+"res://images/": "yellow",
+"res://timelaps/": "gray",
+"res://transition/": "red",
+"res://web_build_1/": "pink",
+"res://web_build_2/": "pink"
+}
 
 [input]
 

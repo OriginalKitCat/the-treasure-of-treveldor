@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://bbq51vocfpe71"]
 
-[ext_resource type="Script" uid="uid://ca65xi4rjqge" path="res://level_select.gd" id="1_1iyaf"]
+[ext_resource type="Script" uid="uid://ca65xi4rjqge" path="res://(ui)levels/level_select.gd" id="1_1iyaf"]
 [ext_resource type="PackedScene" uid="uid://bqpot1xpmj7ye" path="res://parallax_bakground.tscn" id="2_1wnlg"]
 [ext_resource type="Script" uid="uid://b6a8lkdkersh7" path="res://parallax_bakground.gd" id="3_8qr5y"]
 [ext_resource type="PackedScene" uid="uid://c1bkiqsyhlggi" path="res://ui_bakground.tscn" id="4_05pd3"]

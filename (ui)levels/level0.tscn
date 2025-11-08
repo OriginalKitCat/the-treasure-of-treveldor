@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=4 uid="uid://bqtlf303cs6qf"]
 
-[ext_resource type="Script" uid="uid://b60kxnvo2c5c7" path="res://level0.gd" id="1_vqwgl"]
+[ext_resource type="Script" uid="uid://b60kxnvo2c5c7" path="res://(ui)levels/level0.gd" id="1_vqwgl"]
 [ext_resource type="PackedScene" uid="uid://bqpot1xpmj7ye" path="res://parallax_bakground.tscn" id="2_jie2m"]
 [ext_resource type="Script" uid="uid://b6a8lkdkersh7" path="res://parallax_bakground.gd" id="3_65h7p"]
 [ext_resource type="FontFile" uid="uid://dk3rtw1w3qmkh" path="res://fonts/hardpixel/Hardpixel.OTF" id="4_5fe57"]
@@ -385,24 +385,3 @@ position = Vector2(2576, 227)
 
 [node name="extralive" parent="." instance=ExtResource("8_cg7th")]
 position = Vector2(1869, 319)
-
-[connection signal="body_entered" from="grass_tiles/DeathZone" to="grass_tiles/DeathZone" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33398" to="grass_tiles/@Area2D@33398" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33399" to="grass_tiles/@Area2D@33399" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33400" to="grass_tiles/@Area2D@33400" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33401" to="grass_tiles/@Area2D@33401" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33402" to="grass_tiles/@Area2D@33402" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33403" to="grass_tiles/@Area2D@33403" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33404" to="grass_tiles/@Area2D@33404" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33405" to="grass_tiles/@Area2D@33405" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33406" to="grass_tiles/@Area2D@33406" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33407" to="grass_tiles/@Area2D@33407" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33408" to="grass_tiles/@Area2D@33408" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33409" to="grass_tiles/@Area2D@33409" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33410" to="grass_tiles/@Area2D@33410" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33411" to="grass_tiles/@Area2D@33411" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33412" to="grass_tiles/@Area2D@33412" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33413" to="grass_tiles/@Area2D@33413" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33414" to="grass_tiles/@Area2D@33414" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33415" to="grass_tiles/@Area2D@33415" method="_on_body_entered"]
-[connection signal="body_entered" from="grass_tiles/@Area2D@33416" to="grass_tiles/@Area2D@33416" method="_on_body_entered"]
